@@ -22,11 +22,13 @@ This is important where quick deployment and integration of AI capabilities can 
 
 ## Software Components
 
-1. **Deployment Notebook** (`Deploy_Nemotron_Nano_Demo.ipynb`):
-   - Environment verification
-   - Local web server setup
-   - Interactive demo launcher
-   - Troubleshooting guide
+1. **Demo Notebook** (`Demo_Nemotron_Nano.ipynb`):
+   - Interactive demonstrations of all key capabilities
+   - Conversational AI with streaming responses
+   - Function calling with multiple tools
+   - Roleplay scenarios (tutor, coder, writer)
+   - Reasoning challenges with step-by-step solutions
+   - Multi-turn conversation examples
 
 2. **Integration Notebook** (`Integrate_With_NIM.ipynb`):
    - NVIDIA NIM API setup
@@ -56,23 +58,21 @@ Experts who need to evaluate model capabilities for specific use cases. This inc
 
 ```
 .
-├── Deploy_Nemotron_Nano_Demo.ipynb    # Interactive demo deployment notebook
-├── Integrate_With_NIM.ipynb           # NVIDIA NIM integration examples
-├── README.md                           # This file
-└── LICENSE                             # MIT License
+├── Demo_Nemotron_Nano.ipynb          # Interactive demo with live examples
+├── Integrate_With_NIM.ipynb          # NVIDIA NIM integration patterns
+├── README.md                          # This file
+└── LICENSE                            # MIT License
 ```
 
 ## Features
 
-### 📓 **Deploy_Nemotron_Nano_Demo.ipynb**
-- Quick-start deployment guide
-- Environment verification
-- Local web server setup
-- Interactive demo with:
-  - Chat interface with system prompt customization
-  - Function calling demonstrations
-  - Roleplay scenarios (Tutor, Coder, Writer)
-  - Reasoning challenges
+### 📓 **Demo_Nemotron_Nano.ipynb**
+- Hands-on interactive demonstrations
+- Live chat with streaming responses
+- Function calling with weather and calculator tools
+- Roleplay scenarios (Tutor, Coder, Writer)
+- Reasoning challenges (logic, math, lateral thinking)
+- Multi-turn conversation tracking
 
 ### 🔌 **Integrate_With_NIM.ipynb**
 - NVIDIA NIM API integration
@@ -87,8 +87,8 @@ Experts who need to evaluate model capabilities for specific use cases. This inc
 
 For detailed instructions and additional information about this blueprint, please refer to:
 
-- [Deployment Notebook](Deploy_Nemotron_Nano_Demo.ipynb) - Get started with the demo
-- [Integration Notebook](Integrate_With_NIM.ipynb) - Connect to NVIDIA NIM
+- [Demo Notebook](Demo_Nemotron_Nano.ipynb) - Interactive examples of all capabilities
+- [Integration Notebook](Integrate_With_NIM.ipynb) - Production integration patterns
 - [NVIDIA NIM Documentation](https://docs.nvidia.com/nim/)
 - [Nemotron Model Family](https://developer.nvidia.com/nemotron)
 
@@ -135,18 +135,19 @@ cd nemotron-nano-blueprint
 pip install jupyter
 ```
 
-### Step 2: Run the Deployment Notebook
+### Step 2: Run the Demo Notebook
 
 ```bash
 # Launch Jupyter
-jupyter notebook Deploy_Nemotron_Nano_Demo.ipynb
+jupyter notebook Demo_Nemotron_Nano.ipynb
 ```
 
-This notebook will:
-1. ✅ Verify your environment
-2. 🚀 Start a local web server
-3. 🌐 Launch an interactive demo in your browser
-4. 📖 Guide you through the features
+This notebook provides:
+1. 💬 Interactive chat with streaming
+2. 🔧 Function calling demonstrations
+3. 🎭 Roleplay with different personas
+4. 🧩 Reasoning challenge examples
+5. 🔄 Multi-turn conversations
 
 ### Step 3: Explore NVIDIA NIM Integration
 
@@ -165,24 +166,30 @@ This notebook demonstrates:
 
 ## Usage Examples
 
-### Deploy_Nemotron_Nano_Demo.ipynb
+### Demo_Nemotron_Nano.ipynb
 
-**Step 1: Environment Check**
+**Setup**
 ```python
-# Run the verification cell to ensure all files are present
+# Install OpenAI library and configure API key
+NVIDIA_API_KEY = "YOUR_KEY"  # Get from build.nvidia.com
 ```
 
-**Step 2: Launch Demo**
+**Chat Example**
 ```python
-# Execute the server launch cell
-# The demo will open automatically in your browser at http://localhost:8080
+chat("Explain quantum computing in simple terms")
 ```
 
-**Step 3: Interact with Features**
-- Try the chat interface with example prompts
-- Explore function calling demonstrations
-- Select roleplay personas and have conversations
-- Solve reasoning challenges
+**Function Calling**
+```python
+demo_function_calling("What's the weather in Tokyo?")
+demo_function_calling("Calculate 15% tip on $89.50")
+```
+
+**Roleplay**
+```python
+roleplay_demo("tutor", "I don't understand recursion")
+roleplay_demo("coder", "Write a function to reverse a linked list")
+```
 
 ### Integrate_With_NIM.ipynb
 
