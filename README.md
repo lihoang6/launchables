@@ -44,6 +44,15 @@ cd launchables
 
 ### 2. Set Up Your Environment
 
+**IMPORTANT**: Run this setup script FIRST before opening the notebook:
+
+```bash
+# Quick setup (recommended)
+bash setup.sh
+```
+
+Or manually install dependencies:
+
 ```bash
 # Create a virtual environment (recommended)
 python3 -m venv venv
