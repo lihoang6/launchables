@@ -1,8 +1,8 @@
-# 🚀 How to Build NVIDIA Launchables - Interactive Tutorial
+# 🚀 How to Build Brev Launchables - Interactive Tutorial
 
 **Learn by doing - build your first launchable in under an hour**
 
-This is a meta-launchable: a self-documenting, interactive tutorial that teaches you how to create your own NVIDIA launchables while demonstrating best practices through its own implementation.
+This is a meta-launchable: a self-documenting, interactive tutorial that teaches you how to create your own launchables for **Brev** (NVIDIA's GPU cloud platform) while demonstrating best practices through its own implementation.
 
 > *"AI should be accessible to everyone. Launchables democratize AI development by making it easy to share, deploy, and iterate on GPU-accelerated applications."*
 
@@ -133,7 +133,7 @@ MIT License - See LICENSE file for details
 
 ## Acknowledgments
 
-Built for the NVIDIA Launchables ecosystem. Special thanks to the Brev team for making AI deployment accessible to everyone.
+Built for Brev's Launchables feature. Special thanks to the NVIDIA Brev team for making AI deployment accessible to everyone.
 
 ---
 

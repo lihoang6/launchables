@@ -1,4 +1,4 @@
-# How to Build NVIDIA Launchables - Tutorial Dependencies
+# How to Build Brev Launchables - Tutorial Dependencies
 # 
 # IMPORTANT: CUDA Installation Required
 # ---------------------------------------
