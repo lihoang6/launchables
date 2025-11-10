@@ -1,384 +1,140 @@
-# NVIDIA AI Blueprint: Nemotron Nano 9B v2
+# 🚀 How to Build NVIDIA Launchables - Interactive Tutorial
 
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![NVIDIA](https://img.shields.io/badge/NVIDIA-AI-76B900?logo=nvidia)](https://www.nvidia.com/ai)
+**Learn by doing - build your first launchable in under an hour**
 
-## Overview
+This is a meta-launchable: a self-documenting, interactive tutorial that teaches you how to create your own NVIDIA launchables while demonstrating best practices through its own implementation.
 
-This repository provides comprehensive Jupyter notebooks demonstrating how to deploy and integrate the **NVIDIA Nemotron Nano 9B v2** model with NVIDIA NIM. Built following the NVIDIA AI Blueprint pattern, these notebooks make it easy to understand and implement production-ready AI solutions.
+> *"AI should be accessible to everyone. Launchables democratize AI development by making it easy to share, deploy, and iterate on GPU-accelerated applications."*
 
-Nemotron Nano 9B v2 represents a breakthrough in efficient AI: 9 billion parameters delivering enterprise-grade performance with real-time inference, advanced reasoning, and production-ready function calling capabilities.
+## What You'll Learn
 
-## Use Case / Problem Description
+By the end of this tutorial, you'll be able to:
 
-The NVIDIA AI Blueprint for Nemotron Nano 9B v2 addresses the challenge of deploying and integrating advanced language models in production environments. This blueprint:
-
-- **Educates** developers about efficient AI model deployment
-- **Demonstrates** integration with NVIDIA NIM microservices
-- **Showcases** real-world applications including chat, function calling, and reasoning
-- **Enables** rapid prototyping and production deployment
-
-This is important where quick deployment and integration of AI capabilities can lead to better decision-making and faster time-to-market.
-
-## Software Components
-
-1. **Demo Notebook** (`Demo_Nemotron_Nano.ipynb`):
-   - Interactive demonstrations of all key capabilities
-   - Conversational AI with streaming responses
-   - Function calling with multiple tools
-   - Roleplay scenarios (tutor, coder, writer)
-   - Reasoning challenges with step-by-step solutions
-   - Multi-turn conversation examples
-
-2. **Integration Notebook** (`Integrate_With_NIM.ipynb`):
-   - NVIDIA NIM API setup
-   - Basic chat completion examples
-   - Streaming response handling
-   - Function calling demonstrations
-   - Multi-turn conversation patterns
-   - Production integration examples
-
-3. **NVIDIA NIM Integration**:
-   - OpenAI-compatible API
-   - Real-time inference capabilities
-   - Production-ready deployment patterns
-
-## Target Audience
-
-### 1. **Business Stakeholders & Decision Makers**
-Executives and managers who need to understand AI capabilities before investing in deployment. The blueprint offers an intuitive, visual demonstration of what's possible with Nemotron Nano 9B v2.
-
-### 2. **Early Developers & Beginners**
-Developers new to AI who want to explore language model capabilities without complex setup. The blueprint provides a working example with clear code and instant deployment.
-
-### 3. **GenAI Developers & ML Engineers**
-Experts who need to evaluate model capabilities for specific use cases. This includes assessing function calling, reasoning abilities, and response quality. The blueprint provides a foundation for custom integration.
-
-## Repository Structure Overview
-
-```
-.
-├── Demo_Nemotron_Nano.ipynb          # Interactive demo with live examples
-├── Integrate_With_NIM.ipynb          # NVIDIA NIM integration patterns
-├── README.md                          # This file
-└── LICENSE                            # MIT License
-```
-
-## Features
-
-### 📓 **Demo_Nemotron_Nano.ipynb**
-- Hands-on interactive demonstrations
-- Live chat with streaming responses
-- Function calling with weather and calculator tools
-- Roleplay scenarios (Tutor, Coder, Writer)
-- Reasoning challenges (logic, math, lateral thinking)
-- Multi-turn conversation tracking
-
-### 🔌 **Integrate_With_NIM.ipynb**
-- NVIDIA NIM API integration
-- Basic chat completion
-- Streaming response examples
-- Function calling with tools
-- Multi-turn conversations
-- Production deployment patterns
-- Backend integration examples
-
-## Documentation
-
-For detailed instructions and additional information about this blueprint, please refer to:
-
-- [Demo Notebook](Demo_Nemotron_Nano.ipynb) - Interactive examples of all capabilities
-- [Integration Notebook](Integrate_With_NIM.ipynb) - Production integration patterns
-- [NVIDIA NIM Documentation](https://docs.nvidia.com/nim/)
-- [Nemotron Model Family](https://developer.nvidia.com/nemotron)
+✅ **Understand the Launchables Pattern** - Structure, best practices, and why it works  
+✅ **Build GPU-First Applications** - Ensure your code actually uses GPU acceleration  
+✅ **Create Interactive Demos** - Engage users with hands-on examples  
+✅ **Master the Development Workflow** - From idea to deployed launchable  
+✅ **Use Claude + Cursor Effectively** - Leverage AI to build AI (meta!)  
+✅ **Debug GPU Issues** - Common pitfalls and how to solve them  
+✅ **Deploy to Production** - Get your launchable running on Brev  
+✅ **Build Your First Launchable** - Complete guided exercise with real model
 
 ## Prerequisites
 
-### For Demo Deployment
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- Python 3.8+ (for local server deployment via notebook)
-- No GPU required (demo uses simulated responses)
-- No API keys needed
+### Required
+- **GPU**: NVIDIA GPU with CUDA support (4GB+ VRAM recommended)
+- **Python**: 3.8 or higher
+- **CUDA Toolkit**: 11.8 or 12.1+ ([Installation Guide](https://developer.nvidia.com/cuda-downloads))
+- **Git**: For version control
+- **GitHub Account**: For deploying to Brev
 
-### For Production Integration (Optional)
-- NVIDIA NIM API key from [build.nvidia.com](https://build.nvidia.com/)
-- Or local deployment with NVIDIA GPU (see Hardware Requirements)
+### Recommended
+- Basic Python knowledge
+- Familiarity with Jupyter notebooks
+- Understanding of neural networks (helpful but not required)
 
-## Hardware Requirements
+## Quick Start
 
-### Demo Only (This Repository)
-- **Any modern computer** with a web browser
-- No GPU required
-- No special hardware needed
-
-### Production Deployment with Real Model
-
-| Deployment Type | Minimum GPU Requirement |
-|----------------|------------------------|
-| Single GPU | 1x H100, 1x A100 (80GB), 1x L40S |
-| Multi-GPU (Optimal) | 2x A100 (80GB) or better |
-| Edge Deployment | NVIDIA Jetson Thor, DGX Spark |
-| Cloud API | No GPU required (use NVIDIA NIM) |
-
-See [NVIDIA NIM documentation](https://docs.nvidia.com/nim/) for detailed hardware requirements.
-
-## Quickstart Guide
-
-### Step 1: Clone and Setup
+### 1. Clone or Download This Repository
 
 ```bash
-# Clone the repository
-git clone <repository-url>
-cd nemotron-nano-blueprint
-
-# Install Jupyter if needed
-pip install jupyter
+git clone <your-fork-url>
+cd launchables
 ```
 
-### Step 2: Run the Demo Notebook
+### 2. Set Up Your Environment
 
 ```bash
-# Launch Jupyter
-jupyter notebook Demo_Nemotron_Nano.ipynb
+# Create a virtual environment (recommended)
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-This notebook provides:
-1. 💬 Interactive chat with streaming
-2. 🔧 Function calling demonstrations
-3. 🎭 Roleplay with different personas
-4. 🧩 Reasoning challenge examples
-5. 🔄 Multi-turn conversations
-
-### Step 3: Explore NVIDIA NIM Integration
+### 3. Verify GPU Installation
 
 ```bash
-# Open the integration notebook
-jupyter notebook Integrate_With_NIM.ipynb
+python3 -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}')"
 ```
 
-This notebook demonstrates:
-1. 🔑 Setting up NVIDIA API credentials
-2. 💬 Basic chat completions
-3. 📡 Streaming responses
-4. 🔧 Function calling
-5. 🔄 Multi-turn conversations
-6. 🏭 Production deployment patterns
+You should see `CUDA available: True`. If not, see the [CUDA Installation Guide](https://pytorch.org/get-started/locally/).
 
-## Usage Examples
+### 4. Launch the Tutorial
 
-### Demo_Nemotron_Nano.ipynb
-
-**Setup**
-```python
-# Install OpenAI library and configure API key
-NVIDIA_API_KEY = "YOUR_KEY"  # Get from build.nvidia.com
-```
-
-**Chat Example**
-```python
-chat("Explain quantum computing in simple terms")
-```
-
-**Function Calling**
-```python
-demo_function_calling("What's the weather in Tokyo?")
-demo_function_calling("Calculate 15% tip on $89.50")
-```
-
-**Roleplay**
-```python
-roleplay_demo("tutor", "I don't understand recursion")
-roleplay_demo("coder", "Write a function to reverse a linked list")
-```
-
-### Integrate_With_NIM.ipynb
-
-**Step 1: Setup API Key**
-```python
-from openai import OpenAI
-
-client = OpenAI(
-    base_url="https://integrate.api.nvidia.com/v1",
-    api_key="YOUR_API_KEY"  # Get from build.nvidia.com
-)
-```
-
-**Step 2: Basic Chat**
-```python
-response = client.chat.completions.create(
-    model="nvidia/nemotron-nano-9b-v2",
-    messages=[{"role": "user", "content": "Hello!"}]
-)
-print(response.choices[0].message.content)
-```
-
-**Step 3: Streaming**
-```python
-for chunk in response:
-    if chunk.choices[0].delta.content:
-        print(chunk.choices[0].delta.content, end="")
-```
-
-**Step 4: Function Calling**
-Define tools and let the model decide which to use based on user input.
-
-## Integration with NVIDIA NIM
-
-The `Integrate_With_NIM.ipynb` notebook provides complete examples for:
-
-### Quick Start
-```python
-from openai import OpenAI
-
-client = OpenAI(
-    base_url="https://integrate.api.nvidia.com/v1",
-    api_key="YOUR_API_KEY"  # Get from build.nvidia.com
-)
-
-response = client.chat.completions.create(
-    model="nvidia/nemotron-nano-9b-v2",
-    messages=[{"role": "user", "content": "Hello!"}],
-    stream=True
-)
-```
-
-### Advanced Features
-- Function calling with custom tools
-- Multi-turn conversations with context
-- Streaming for real-time responses
-- Production deployment patterns with FastAPI
-
-See the notebook for detailed examples and best practices.
-
-## Model Specifications
-
-| Specification | Value |
-|--------------|-------|
-| Parameters | 9 Billion |
-| Context Length | 8K tokens |
-| Inference Time | <100ms (optimized deployment) |
-| License | MIT |
-| Capabilities | Chat, Function Calling, Reasoning, Code Generation |
-| Languages | Multilingual support |
-
-## Performance Benchmarks
-
-Based on the demo visualization:
-
-- **Instruction Following**: 96%
-- **Code Generation**: 94%
-- **Reasoning Tasks**: 92%
-- **Function Calling**: 98%
-- **Multilingual**: 89%
-- **Roleplay Consistency**: 95%
-
-*Note: These are representative metrics for demonstration purposes.*
-
-## Use Cases
-
-### 🤖 Conversational AI
-Deploy intelligent chatbots and virtual assistants with natural, context-aware conversations.
-
-### 💼 Business Automation
-Automate workflows, data processing, and decision-making with reliable function calling.
-
-### 📚 Education & Training
-Create adaptive learning systems with personalized tutoring and instant feedback.
-
-### 🛠️ Developer Tools
-Enhance IDEs with intelligent code completion, debugging assistance, and documentation.
-
-### 📊 Data Analysis
-Transform complex data into actionable insights with natural language queries.
-
-### 🎮 Gaming & Entertainment
-Power dynamic NPCs, adaptive storytelling, and immersive interactive experiences.
-
-## Troubleshooting
-
-### Jupyter Notebook Issues
-
-**Notebook won't open:**
 ```bash
-pip install --upgrade jupyter notebook
+jupyter notebook how-to-build-launchables.ipynb
 ```
 
-**Port already in use:**
-- Change the `PORT` variable in `Deploy_Nemotron_Nano_Demo.ipynb` (default: 8080)
-- Try port 8081, 8082, or another available port
+### 5. Follow Along
 
-**Browser doesn't open automatically:**
-- Manually navigate to `http://localhost:8080` in your browser
+Work through each section sequentially. The notebook is interactive - you'll write code, see results, and build a real launchable by the end.
 
-### NVIDIA NIM API Issues
+## What Makes This Tutorial Special?
 
-**Authentication errors:**
-- Verify your API key from [build.nvidia.com](https://build.nvidia.com/)
-- Ensure the key is correctly set in the notebook
+🎯 **Self-Demonstrating** - The tutorial itself is a launchable, showing best practices through example  
+🔥 **GPU-First** - Every section emphasizes GPU acceleration and verification  
+💻 **Hands-On** - Working code, not theory. Copy, paste, and run  
+🤖 **AI-Assisted Development** - Learn to use Claude to supercharge your Cursor workflow  
+🏗️ **Production-Ready** - Deploy what you build to real users  
+🎓 **Complete Workflow** - From concept to deployment in one tutorial  
 
-**Rate limiting:**
-- NVIDIA API has rate limits; add delay between requests if needed
-- Consider caching responses for development
+## Tutorial Outline
 
-**Connection errors:**
-- Check internet connectivity
-- Verify firewall settings aren't blocking API requests
+1. **Introduction & Setup** - GPU verification and environment setup
+2. **Understanding the Structure** - Launchables pattern and organization
+3. **GPU-First Development** - Device management and best practices
+4. **Building Interactive Demos** - Create engaging user experiences
+5. **Prompt Engineering with Claude** - AI-assisted development workflow
+6. **Debugging & Testing** - Common errors and solutions
+7. **Git & GitHub Setup** - Version control workflow
+8. **Deploying to Brev** - Take your launchable to production
+9. **Your First Launchable Exercise** - Guided mini-project
+10. **Resources & Next Steps** - Continue your journey
+
+## GPU Requirements
+
+This tutorial requires an NVIDIA GPU with CUDA support. Minimum requirements:
+
+- **VRAM**: 4GB+ (8GB+ recommended for larger models)
+- **CUDA Compute Capability**: 6.0+ (most GPUs from 2016+)
+- **Supported GPUs**: RTX 20/30/40 series, Tesla T4, V100, A100, etc.
+
+### Checking Your GPU
+
+```bash
+nvidia-smi
+```
+
+This should display your GPU model, driver version, and CUDA version.
+
+## Resources
+
+- **Main Launchables Repository**: [github.com/brevdev/launchables](https://github.com/brevdev/launchables)
+- **Brev Documentation**: [brev.dev/docs](https://brev.dev/docs)
+- **NVIDIA CUDA Toolkit**: [developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit)
+- **PyTorch Installation**: [pytorch.org/get-started](https://pytorch.org/get-started/locally/)
+- **Transformers Library**: [huggingface.co/docs/transformers](https://huggingface.co/docs/transformers)
 
 ## Contributing
 
-We welcome contributions! Please see our contributing guidelines (if applicable) or:
+Found an issue or have a suggestion? This launchable is open source and welcomes contributions!
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Submit a pull request
-
-## Known Issues
-
-- Mock responses are pre-defined (not actual model inference)
-- Some animations may not work on older browsers
-- Mobile layout optimized for portrait mode
-
-## Roadmap
-
-- [ ] Backend integration with NVIDIA NIM
-- [ ] Real-time model inference option
-- [ ] Additional demo scenarios
-- [ ] Multi-language UI support
-- [ ] Dark/light mode toggle
-- [ ] Advanced function calling examples
+4. Test thoroughly (restart kernel and run all cells)
+5. Submit a pull request
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License - See LICENSE file for details
 
 ## Acknowledgments
 
-- Built for the NVIDIA AI community
-- Inspired by NVIDIA AI Blueprint patterns
-- Designed for GTC-quality demonstrations
-
-## Support
-
-For questions, issues, or contributions:
-
-- 📧 [NVIDIA Developer Forums](https://forums.developer.nvidia.com/)
-- 📚 [Documentation](https://docs.nvidia.com/)
-- 🌐 [NVIDIA AI](https://www.nvidia.com/ai)
-- 💬 [Build with NVIDIA](https://build.nvidia.com/)
-
-## About NVIDIA Nemotron
-
-Nemotron is NVIDIA's family of large language models designed for enterprise applications. The Nano variant delivers impressive performance in a compact form factor, making it ideal for edge deployment and resource-constrained environments.
-
-Learn more:
-- [Nemotron Model Family](https://developer.nvidia.com/nemotron)
-- [NVIDIA NIM](https://www.nvidia.com/en-us/ai/)
-- [NVIDIA AI Blueprints](https://build.nvidia.com/explore/discover)
+Built for the NVIDIA Launchables ecosystem. Special thanks to the Brev team for making AI deployment accessible to everyone.
 
 ---
 
-**Built with ❤️ for the NVIDIA AI community**
-
-*This is a demonstration interface showcasing model capabilities with simulated responses. For production deployments, integrate with NVIDIA NIM or local model hosting.*
-
+**Ready to build your first launchable?** Open `how-to-build-launchables.ipynb` and let's get started! 🚀

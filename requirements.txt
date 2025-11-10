@@ -1,0 +1,37 @@
+# How to Build NVIDIA Launchables - Tutorial Dependencies
+# 
+# IMPORTANT: CUDA Installation Required
+# ---------------------------------------
+# This tutorial requires a CUDA-capable GPU and the CUDA toolkit.
+# 
+# Install PyTorch with CUDA support:
+# Visit https://pytorch.org/get-started/locally/ and select your CUDA version
+# 
+# Example for CUDA 12.1:
+#   pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+#
+# For CUDA 11.8:
+#   pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# Core Dependencies
+torch>=2.0.0
+transformers>=4.30.0
+accelerate>=0.20.0
+
+# Notebook Environment
+jupyter>=1.0.0
+ipywidgets>=8.0.0
+
+# Visualization and Utilities
+matplotlib>=3.7.0
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# GPU Monitoring (optional but recommended)
+gputil>=1.4.0
+pynvml>=11.5.0
+
+# Development Tools
+black>=23.0.0
+flake8>=6.0.0
+
