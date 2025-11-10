@@ -208,7 +208,7 @@ Transformed the SGLang tutorial from basic to **keynote-quality** with productio
 
 ---
 
-## The "Jensen Huang Moment"
+## The "Keynote Moment"
 
 **Cell 15 (RadixAttention Benchmark)** is the keynote centerpiece:
 
