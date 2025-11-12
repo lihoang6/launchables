@@ -25,33 +25,31 @@ Welcome! If you've built a notebook showcasing your AI work - whether it's a lib
 
 By the end of this tutorial:
 
-✅ **Package Your Existing Notebook** - Transform your current work  
-✅ **Add GPU Verification** - Ensure reliable acceleration  
-✅ **Structure for Sharing** - Best practices for distribution  
-✅ **Deploy to Brev** - One-click hosting with GPU  
-✅ **Share with the World** - Give developers instant access  
+✅ **Learn** the essential components of Launchables and transform your current work (in this example, we're going to configure Unsloth to enable access to 181+ notebooks) 
+✅ **Package Your Existing Notebook** - Transform your current work (in this example, we're going to configure Unsloth to enable access to 181+ notebooks) 
+✅ **Deploy to Brev** - One-click hosting with GPU Acceleration 
+✅ **Share with the World** - Give developers and team members instant access  
+
+> **💡 Key Insight**: A Launchable is just a well-structured notebook + requirements.txt + GPU verification. You probably already have 80% of what you need!
 
 ---
 
-## How This Works
+**The Impact**:
 
-This is a **hands-on tutorial**. We'll:
-
-1. **Examine** a working Launchable (this notebook)
-2. **Learn** the essential components
-3. **Practice** with a real example (sentiment analysis)
-4. **Deploy** your first Launchable
-5. **Share** it with your community
-
-> **💡 Key Insight**: A Launchable is just a well-structured notebook + requirements.txt + GPU verification. You probably already have 80% of what you need!
+| Metric | Before Launchables | After Launchables | Impact |
+|--------|-------------------|-------------------|--------|
+| Setup Time | 2+ hours | 30 seconds | **240x faster** |
+| Success Rate | ~30% | ~95% | **3x more** adoption |
+| User Friction | High | None | Lower churn |
+| Viral Sharing | Difficult | One link | Easier growth |
 
 ---
 
 ## 📋 Tutorial Roadmap
 
 ### Part 1: Foundations (~15 min)
-1. **GPU Verification** - The critical first step
-2. **Launchables Structure** - File organization and patterns
+1. **Launchables Structure** - File organization and patterns
+2. **System, Dependencies, and GPU Verification** - The critical first step
 3. **Why This Matters** - Real impact on adoption
 
 ### Part 2: Transformation (~45 min)
@@ -68,22 +66,24 @@ This is a **hands-on tutorial**. We'll:
 10. **Hands-On Exercise** - Convert a real example
 11. **Resources & Next Steps** - Join the ecosystem
 
-**Total: ~90 minutes from existing notebook to deployed Launchable**
+**Total: ~30 minutes from existing notebook to deployed Launchable**
 
 ---
 
-## Real Example: Unsloth's Journey
+## Real Example: A Developer using Unsloth
 
 **Before**: Unsloth had a notebook showing 2x faster fine-tuning. Users had to:
 - Clone repo, install dependencies, get a GPU, debug issues → 2+ hours
 - Success rate: ~30% of users
 
-**After**: Unsloth created a Launchable. Users:
+**After**: Developer created a Launchable. Users:
 - Click link → Working environment in 30 seconds
 - Success rate: ~95% of users
 - **Result**: 3x more developers trying and adopting Unsloth
 
-**This tutorial shows you how to achieve the same result.**
+---
+
+**Ready to make your innovation accessible?** Let's verify your System, Dependencies, and GPU and get started! 👇
 
 ---
 
