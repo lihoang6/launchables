@@ -1,26 +1,35 @@
 # 🚀 How to Build Brev Launchables
 
-**Learn to transform your AI notebooks into shareable, GPU-backed experiences.**
+**Built something in AI? Get 30x more developers to actually try it.**
 
-This interactive tutorial teaches you how to package your work as a Launchable - making it instantly accessible to developers with one click and automatic GPU access.
+## The Problem
+You share your AI work on GitHub. 98% of developers never see it work because they hit setup/GPU issues.
 
-## What You'll Build Today
+## The Solution
+Turn your notebook into a Launchable. Developers click a link, land in a GPU notebook in 30 seconds, and **actually try your work**.
 
-- GPU-verified interactive demos
-- Shareable prototypes for your ecosystem
-- Working examples that help others be 10x faster with local GPU
+## What You'll Learn
+
+- Transform existing notebooks into zero-friction demos
+- Add GPU verification and benchmarking
+- Create shareable prototypes with one-click GPU access
+- Get more adoption, stars, and visibility
+
+## Time Investment
+
+**~30 minutes** to convert your existing notebook into a launchable.
 
 ## Prerequisites
 
-- GPU-enabled environment (provided by Brev)
-- Python 3.8+
-- Basic familiarity with Jupyter notebooks
+- An existing AI notebook (or build one from scratch)
+- Basic Python knowledge
+
+**That's it.** Brev provides the GPU and environment automatically.
 
 ## Get Started
 
-**Click "Open Notebook" to start the tutorial.** Everything runs in the notebook - no terminal setup required.
+**Click "Open Notebook" to start.** Everything runs in the notebook - no terminal setup required.
 
 ---
 
-*Estimated time: 45-60 minutes*  
-*Target audience: Developers who built something in AI and want to share it*
+*For developers who built something in AI and want more people to actually try it* 💚
