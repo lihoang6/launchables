@@ -23,4 +23,4 @@ This interactive tutorial teaches you how to package your work as a Launchable -
 ---
 
 *Estimated time: 45-60 minutes*  
-*Target audience: AI creators who want to share their work*
+*Target audience: Developers who built something in AI and want to share it*
